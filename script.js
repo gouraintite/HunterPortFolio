@@ -3,6 +3,7 @@ let Span = document.querySelectorAll(".nav--element span");
 let Hire = document.querySelector(".afterHire");
 let Few  = document.querySelector(".fewInfo div span a");
 let Hires = document.querySelector(".afterHire span");
+let play = document.querySelector(".play");
 
 
 for (let i = 0; i < item.length; i++) {
@@ -37,7 +38,10 @@ Few.addEventListener('mouseover', function(event){
       }, 500);
 })
 
-function Clic(){
+Hire.addEventListener('mouseover', function(){
+    play.style.display = 'inline';
+})
 
-    item.textContent = "salut"
-}
+Hire.addEventListener('mouseleave', function(){
+    play.style.display = "none";
+})
